@@ -1,10 +1,10 @@
-# 🗨️ Python Socket Chat Application
+#  Python Socket Chat Application
 
 A simple **chat application** built using Python’s built-in `socket` library. This project demonstrates the fundamentals of **socket programming** and **client-server communication** over TCP. It allows a server and a client to exchange messages in real time through the terminal.
 
 ---
 
-## 🚀 Features
+## Features
 - Real-time text communication between client and server  
 - Uses TCP sockets for reliable message delivery  
 - Simple and lightweight (no external libraries required)  
@@ -12,7 +12,7 @@ A simple **chat application** built using Python’s built-in `socket` library. 
 
 ---
 
-## 🧠 How It Works
+## How It Works
 The project is based on **client-server architecture**.  
 - The **Server** opens a socket and waits for incoming client connections.  
 - The **Client** connects to the server using its IP address and port.  
@@ -20,7 +20,7 @@ The project is based on **client-server architecture**.
 
 ---
 
-## 🖥️ Requirements
+## Requirements
 - Python 3.x  
 - Works on Windows, macOS, or Linux  
 - No third-party dependencies  
