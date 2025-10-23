@@ -3,7 +3,7 @@ import threading
 import tkinter as tk
 from tkinter import scrolledtext, messagebox
 
-# --- Client logic ---
+# Client logic 
 
 def connect_to_server():
     try:

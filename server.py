@@ -3,12 +3,12 @@ import threading
 import tkinter as tk
 from tkinter import scrolledtext, messagebox
 
-# --- Global variables ---
+# Global variables
 server_socket = None
 client_socket = None
 addr = None
 
-# --- Function to handle incoming client messages ---
+#Function to handle incoming client messages
 def receive_messages():
     global client_socket
     while True:
@@ -22,7 +22,7 @@ def receive_messages():
         except:
             break
 
-# --- Function to send messages ---
+# Function to send messages
 def send_message():
     global client_socket
     msg = message_entry.get()
@@ -41,7 +41,7 @@ def send_message():
     except:
         messagebox.showerror("Error", "No client connected yet!")
 
-# --- Function to start the server ---
+# Function to start the server
 def start_server():
     global server_socket, client_socket, addr
     try:
@@ -58,7 +58,7 @@ def start_server():
     except Exception as e:
         messagebox.showerror("Error", f"Server failed to start:\n{e}")
 
-# --- Function that accepts a client connection 
+#  Function that accepts a client connection 
 def accept_connection():
     global client_socket, addr
     client_socket, addr = server_socket.accept()
@@ -69,7 +69,7 @@ def accept_connection():
     # Start thread for receiving messages
     threading.Thread(target=receive_messages, daemon=True).start()
 
-# --- GUI Setup ---
+#  GUI Setup 
 window = tk.Tk()
 window.title("Chat Server")
 
